@@ -1,0 +1,30 @@
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.flexrowalignleft{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.container-all{
+    width: 70%;
+}
+.squer{
+    width: 300px;
+    padding: 10px 5px 5px 20px;
+    
+}
+
+.w100{
+    width: 100%;
+}

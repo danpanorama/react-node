@@ -1,0 +1,52 @@
+.disable_card{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all .2s ease;
+
+}
+.active_card{
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+
+    height: 650px;
+    overflow: scroll;
+    padding-left:20px ;
+    padding-right: 20px;
+    width: 700px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: visible;
+    transition: all .5s ease;
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+.cardInfo{
+    height: 100%;
+}
+.gridrow{
+    display: flex;
+    flex-direction: column;
+
+}
+.productInCard{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+.buybtn{
+    width: 25%;
+    align-self: center;
+    margin-bottom: 50px;
+
+}

@@ -1,0 +1,59 @@
+
+body{
+    font-family: cursive;
+}
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
+.addbtn{
+    padding: 10px 20px 10px 20px;
+}
+.w25{
+    width: 25%;
+}
+.braduce-left-right-bottom{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.btn{
+    padding: 10px 20px 10px 20px;
+    border: 3px solid black;
+}
+.price{
+    padding-left: 20px;
+}
+
+
+.activeError{
+    padding: 10px 20px 10px 20px;
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 40%;
+    transition: all .2s ease;
+
+}
+.border{
+    border: 5px solid black;
+}
+.disableError{
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    width: 40%;
+    transition: all .2s ease;
+}
+.pad{
+    padding: 10px 20px 10px 20px;
+}
+.error{
+    background-color: red;
+    
+}
+.success{
+    background-color: greenyellow;
+}

@@ -1,0 +1,64 @@
+version: '3.8'
+services:  
+  server:
+    build: ./server
+    container_name: servernew
+    ports:
+      - "3004:3004"
+    volumes:
+      - ./server:/app
+      
+    
+       
+  mysql:
+    image: mysql
+    hostname: localhost
+    restart: always
+    environment:
+     - MYSQL_ROOT_PASSWORD= '12344'
+     - MYSQL_DATABASE= shoppingapp
+     - MYSQL_USER= dan
+     - MYSQL_PASSWORD= '12344'
+
+ 
+  client:
+    build: ./client
+    container_name: clientnew
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
+    
+volumes:
+  mysql:
+    driver: local
+
+
+
+    # volumes:
+    #   - ./client:/app
+    #   - ./app/node_modules
+      #   - ./app/node_modules
+
+
+
+      
+
+
+# server:
+#   image: server
+#   ports:
+#       - "3000:3000"
+#   depens_on:
+#       - mysql
+#   mysql:
+#     image: gfgdgdf
+#     port:
+#       - "fdgsg:gfd"   
+
+# networks:
+#  mern-app:
+#   driver: bridge
+# volumes:
+#  myaql-data:  
+#   driver: local  
